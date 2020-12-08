@@ -3,7 +3,21 @@ import { join } from 'path';
 import prettier from 'prettier';
 import ts from 'typescript';
 
-const prog = ts.factory.createInterfaceDeclaration([], [], 'Test', [], [], []);
+const prog = ts.factory.createInterfaceDeclaration(
+  [],
+  [],
+  'Test',
+  [],
+  [],
+  [
+    ts.factory.createPropertySignature(
+      [],
+      'a',
+      undefined,
+      ts.factory.createKeywordTypeNode(ts.SyntaxKind.StringKeyword),
+    ),
+  ],
+);
 
 const printer = ts.createPrinter();
 

@@ -1,1 +1,3 @@
-interface Test {}
+interface Test {
+  a: string;
+}
