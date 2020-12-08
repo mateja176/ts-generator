@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import { join } from 'path';
-import * as ts from 'typescript';
+import ts from 'typescript';
 
 const prog = ts.factory.createInterfaceDeclaration([], [], 'Test', [], [], []);
 
